@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="CryptoExchange.CommandApi/CryptoExchange.CommandApi.csproj" />
+  <Project Path="CryptoExchange.Core/CryptoExchange.Core.csproj" />
+  <Project Path="CryptoExchange.QueryApi/CryptoExchange.QueryApi.csproj" />
+</Solution>

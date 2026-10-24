@@ -1,0 +1,6 @@
+@CryptoExchange.QueryApi_HostAddress = http://localhost:5246
+
+GET {{CryptoExchange.QueryApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
