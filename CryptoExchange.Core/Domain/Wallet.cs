@@ -18,6 +18,15 @@ public class Wallet : AggregateRoot
             UserId = userId
         };
 
+        var walletCreated = new WalletCreated(
+            id: Guid.NewGuid(),
+            walletId: id,
+            userId: userId,
+            occurredOn: DateTime.UtcNow
+        );
+
+        wallet.AddDomainEvent(walletCreated);
+
         return wallet;
     }
 }
