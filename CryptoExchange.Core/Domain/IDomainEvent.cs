@@ -1,12 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace CryptoExchange.Core.Domain
+namespace CryptoExchange.Core.Domain;
+
+public interface IDomainEvent
 {
-    public interface IDomainEvent
-    {
-        Guid id { get; }
-        DateTime OccurredOn { get; }
-    }
+    Guid Id { get; }
+    DateTime OccurredOn { get; }
 }
